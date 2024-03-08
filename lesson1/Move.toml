@@ -1,0 +1,15 @@
+[package]
+name = "Lesson1"
+version = "1.0.0"
+authors = []
+
+[addresses]
+Lesson1= "007ac18f092938ca31b7221f0a3c63654c707d3a4ce79d3096823c6092f901cf"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies]

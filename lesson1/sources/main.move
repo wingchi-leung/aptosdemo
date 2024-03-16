@@ -1,10 +1,10 @@
 module Lesson1::HelloWorld{
-        use std::debug::print;
-        use std::string::utf8 ;
+        struct Coin has key {
+                value: u64,
+        }
 
-        #[test]
-        fun test_hello_world(){
-
-                print(&utf8(b"Hello,world"));
+        public fun mint(account: signer, value: u64) {
+                // public Coin under &account's address
+                move_to(&account, Coin { value })
         }
 }
